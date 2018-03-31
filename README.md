@@ -1,6 +1,6 @@
 ComputerVision_OpenCV
 
-Computer vision tests, Python OpenCV code, Aggregated or refactored Pyimagesearch tutorials
+Computer vision tests, Python OpenCV code, Aggregated or refactored Pyimagesearch tutorials and others
 
  The original Pyimagesearch tutorials are by Adrian Rosebrock:
  
