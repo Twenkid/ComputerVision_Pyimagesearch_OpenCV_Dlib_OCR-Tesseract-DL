@@ -1,6 +1,7 @@
 # USAGE
 # python deep_learning_object_detection.py --image images/example_01.jpg \
 #	--prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+#Download: https://github.com/PINTO0309/MobileNet-SSD-RealSense/blob/master/caffemodel/MobileNetSSD/MobileNetSSD_deploy.caffemodel
 
 # import the necessary packages
 import numpy as np
