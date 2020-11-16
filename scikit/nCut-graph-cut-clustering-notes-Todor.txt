@@ -1,0 +1,55 @@
+http://people.eecs.berkeley.edu/~malik/papers/SM-ncut.pdf
+
+Normalized Cuts and Image Segmentation
+Jianbo Shi and Jitendra Malik, Member, IEEE
+
+Manuscript received 4 Feb. 1998; accepted 16 Nov. 1999.
+Recommended for acceptance by M. Shah.
+For information on obtaining reprints of this article, please send e-mail to:
+tpami@computer.org, and reference IEEECS Log Number 107618.
+016
+
+Found in scikit docs.
+
+...
+
+Student Notes and excerpts from the paper by Todor Iliev Arnaudov
+
+
+Many possible partitionings
+Hierarchical partitions
+High level further repartitioning
+Merging
+Graphs
+Tree
+
+Graph, grouping
+
+"This suggests that image segmentation based on lowlevel
+cues cannot and should not aim to produce a complete
+final ªcorrectº segmentation. The objective should instead
+be to use the low-level coherence of brightness, color, texture, or
+motion attributes to sequentially come up with hierarchical
+partitions. Mid- and high-level knowledge can be used to
+either confirm these groups or select some for further
+attention. This attention could result in further repartitioning
+or grouping. The key point is that image partitioning is
+to be done from the big picture downward, rather like a
+painter first marking out the major areas and then filling in
+the details"
+
+
+
+nodes = i,j - points in the feature space
+edge's weight = w(i,j)
+w = similarity
+sets V1, V2, ...
+similarity in Vx is high
+similarity between V1, V2, ... is low
+
+
+1. What is the precise criterion for a good partition?
+2. How can such a partition be computed efficiently?
+
+Perceptual grouping is about extracting the global impressions of a scene
+
