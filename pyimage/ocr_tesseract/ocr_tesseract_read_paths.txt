@@ -1,0 +1,6 @@
+python ocr.py "D:\\Py\\pyimage\\ocr\\ocr.py" 
+
+-l bul -i ../bg.png
+
+
+r"D:\Programs\Tesseract\tesseract.exe"
