@@ -19,7 +19,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 print(pytesseract.pytesseract.tesseract_cmd)
 
 def Correct(text):
-  Replace = { "§":"s", " ":"", "&":""} #replace also other non-letter characters, possibly digits
+  Replace = { "§":"S", " ":"", "&":""} #replace also other non-letter characters, possibly digits
   corrected = text
   for k in Replace:
     print(k)
@@ -28,7 +28,7 @@ def Correct(text):
  
 #SimilarA = ["N","S","S", "8"]
 #SimilarB = ["W","&", §
-Similar = { "N":"W", "W":"N", "§":"S", "S":"§", "§","&", "&":"§", "8":"&", "&":"8", "1":"l"}
+Similar = { "N":"W", "W":"N", "§":"S", "S":"§", "§":"&", "&":"§", "8":"&", "&":"8", "1":"l"}
 # Should check both for lower case and for capital (lower L is similar to 1)
 # Use a better structure of correspondence. E.g. one symbol could be similar to many others
 # After recognizing - show similar variants, compare to dictionary etc.
@@ -94,7 +94,8 @@ print(text)
 custom_config_8 = r'--oem 3 --psm 8'
 text = pytesseract.image_to_string(contrastBW, config=custom_config_8)#psm 13 -- line, lang="ita")
 print(text)
-corrected = text.lower()
+#corrected = text.lower()
+corrected = text.upper()
 Replace = { "§":"S", " ":"" }
 corrected = text
 for k in Replace:
@@ -106,7 +107,7 @@ cv2.imshow('contrastBW', contrastBW)
 #"KitcheWs" --> check a dictionary, similarity to real words (possibly test with normalized forms,
 # lemmatized, if ending with an "s", test without also etc.
 #English dictionary... from NLTK, WordNet or whatever
-Vocab = ["kitchen"]  ...
+Vocab = ["kitchen"]  #...
 
 cv2.waitKey(0)
 cv2.floodFill(contrastBW, None, (0,0), 255)
@@ -160,10 +161,10 @@ text = pytesseract.image_to_string(g, config=custom_config)#, lang="ita")
 print("MASK:", text)
 corrected = Correct(text)
 print("CORRECTED: ", corrected)
-
-text = pytesseract.image_to_string(g, lang="eng",  config=custom_config)
-print(text) 
 cv2.waitKey(0)
+#text = pytesseract.image_to_string(g, lang="eng",  config=custom_config)
+#print(text) 
+#cv2.waitKey(0)
 
 cv2.imwrite("logo_without_threshold_median_etc.png", g)
 
