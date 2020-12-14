@@ -1,4 +1,6 @@
 # Code for the Stackoverflow thread: https://stackoverflow.com/questions/65277845/how-to-obtain-the-best-result-from-pytesseract/65278387?noredirect=1#comment115407021_65278387
+#Install Tesseract: https://github.com/UB-Mannheim/tesseract/wiki
+#python -m pip install pytesseract
 # Question and initial code by Matteo
 # Extended with additional image processing by Todor, 13.12.2020
 # Recognizes "Cucine" if given only with the box with "Lube"
