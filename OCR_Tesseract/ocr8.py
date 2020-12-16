@@ -11,7 +11,7 @@
 # See also: https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d
 # https://github.com/tesseract-ocr/tesseract/wiki
 # for configuration
-# ocr8_logou.py, logou.png
+# ocr8.py, logou.png
 # CUCINE
 #
 # LUBE
