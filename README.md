@@ -9,17 +9,24 @@ Computer vision tests, Python OpenCV code, originally from Pyimagesearch and oth
 
 ## Speed up build:
 
-Compile from/to RAM disks (in Windows). OSFMount, imdisk, etc. Don't forget to format the new drives.
-(Beware with imdisk and unmounting: one drive may delete the other ones as well: I've had such an issue at least. )
+**Compile from/to RAM disks** (in Windows). **OSFMount, imdisk**, etc. Don't forget to format the new drives.
 
-OCV 4.5.2 built is 1.x GB (I don't know for rich builds with Gstreamer etc.). Allocate 1.5 - 2.0 GB for the built output.
+_(!!! Beware with imdisk and unmounting: unmounting one drive may delete the other ones as well! Is it a rule: IDKn, bt it hpnd. [:)] )_
+
+## Storage
+
+OCV 4.5.2 could be > 1.5 GB after built. (I don't know for rich builds with Gstreamer etc.).
+Allocate ~ 2.0 GB for the built output drive.
 
 
 ```
 CUDA_ARCH_BIN
 3.0;3.5;3.7;5.0;5.2;6.0;6.1;7.0;7.5
 
---> Change to just the target one.
+```
+--> Change to **just the target one**, if only for your current PC, this is the slowest part of compilation.
+https://answers.opencv.org/question/5090/why-opencv-building-is-so-slow-with-cuda/
+```
 750 Ti: 5.0;
 960: 5.2 
 1070: 6.1
@@ -58,7 +65,8 @@ https://github.com/Twenkid/ComputerVision_Pyimagesearch_OpenCV_Dlib_OCR-Tesserac
 ## Speed up build:
 
 Compile from/to RAM disks (in Windows). OSFMount, imdisk, etc. Don't forget to format the new drives.
-(Beware with imdisk and unmounting: one drive may delete the other ones as well: I've had such an issue at least. )
+
+(!!! Beware with imdisk and unmounting! Unmounting one drive may delete the others as well (at least I've had such an issue). Imdisk allows to resize the disk, add more space when needed. )
 
 OCV 4.5.2 built is 1.x GB (I don't know for rich builds with Gstreamer etc.). Allocate 1.5 - 2.0 GB for the built output.
 
