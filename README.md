@@ -7,7 +7,34 @@ Computer vision tests, Python OpenCV code, originally from Pyimagesearch and oth
 
 ## OpenCV build tips by Todor
 
-## Speed up build:
+### Configure Visual Studio and Path (v. 4.52)
+
+Start->Environment-> Path (System and User)  /bin/ ... (where opencv_world452.dll is located)
+
+VS:
+For Project->Properties->VC++ directories
+
+Executable
+Include
+Library
+Source
+```
+C:\Downloads\opencv\build\x64\vc15\bin;$(ExecutablePath)
+C:\Downloads\opencv\build\include\      
+C:\Downloads\opencv\build\x64\vc15\lib;
+C:\Downloads\opencv\build\include\
+```
+
+-> Linker: Additional Dependencies: opencv_world452.lib 
+Possibly: Additional Library Path: ...
+
+Add to PATH the /bin dir where the **opencv_world452.dll** is located.
+If the compiled program still fails to run/can't find the DLL, either copy your exe to the opencv dir or copy the dll to the exe-dir (easier).
+
+Sometimes with path issues ("opencv2/..." is underlined in the IDE), one may try to use absolute paths, it sometimes works, however the loaded header files also import files without abs.dirs.
+
+
+### Speed up build:
 
 **Compile from/to RAM disks** (in Windows). **OSFMount, imdisk**, etc. Don't forget to format the new drives.
 
@@ -55,16 +82,20 @@ DSHOW
 D3D11 ...
 ...
 ```
-
 Install gstreamer if needed:  (slow download, requires 1 GB+ if all is installed, 1.18)
 https://gstreamer.freedesktop.org/download/
 
 Follow: https://galaktyk.medium.com/how-to-build-opencv-with-gstreamer-b11668fa09c
 Windows: 
 Set Path: (Start->Envir... ) “GSTREAMER_DIR” “C:\gstreamer\1.0\x86_64”
-...
-
+```
 Install QT if you need it etc.
+
+* Check build profile and version:
+```
+ J:\opencv\build\x64\vc15\bin\opencv_annotation.exe
+ J:\opencv\build\x64\vc15\bin\opencv_version_win32.exe"
+``` 
 
 https://github.com/Twenkid/ComputerVision_Pyimagesearch_OpenCV_Dlib_OCR-Tesseract-DL/blob/master/opencv_build_tips.md
 
