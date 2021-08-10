@@ -5,7 +5,7 @@ Computer vision tests, Python OpenCV code, originally from Pyimagesearch and oth
  The original Pyimagesearch tutorials by Adrian Rosebrock:  https://www.pyimagesearch.com  
  https://github.com/jrosebr1 
 
-## OpenCV build tips by Todor
+## OpenCV build tips (Windows and VS)
 
 ### Configure Visual Studio and Path (v. 4.52)
 
