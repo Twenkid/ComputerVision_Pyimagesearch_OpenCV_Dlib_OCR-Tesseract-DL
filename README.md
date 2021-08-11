@@ -61,7 +61,7 @@ After downloading them from OpenCV github.
 https://answers.opencv.org/question/5090/why-opencv-building-is-so-slow-with-cuda/
 
 ```
-750-Ti. 5.0;
+750.... 5.0;
 960.... 5.2 
 1070... 6.1
 2060... 7.5
