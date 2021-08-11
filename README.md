@@ -25,8 +25,8 @@ C:\Downloads\opencv\build\x64\vc15\lib;
 C:\Downloads\opencv\build\include\
 ```
 
--> Linker: Additional Dependencies: opencv_world452.lib 
-Possibly: Additional Library Path: ...
+-> **Linker: Additional Dependencies:** opencv_world452.lib 
+Possibly: **Additional Library Path: ...**
 
 Add to PATH the /bin dir where the **opencv_world452.dll** is located.
 If the compiled program still fails to run/can't find the DLL, either copy your exe to the opencv dir or copy the dll to the exe-dir (easier).
@@ -56,14 +56,16 @@ After downloading them from OpenCV github.
 **CUDA_ARCH_BIN**
 3.0;3.5;3.7;5.0;5.2;6.0;6.1;7.0;7.5
 
-```
+
 --> Change to **just the target one**, if only for your current PC, this is the slowest part of compilation.
 https://answers.opencv.org/question/5090/why-opencv-building-is-so-slow-with-cuda/
+
 ```
-750 Ti: 5.0;
-960: 5.2 
-1070: 6.1
-2060 Super: 7.5.
+750-Ti. 5.0;
+960.... 5.2 
+1070... 6.1
+2060... 7.5
+3060... 8.6
 ```
 
 CPU dispatch: if you don't plan to use old CPUs, set the highest minimum.
