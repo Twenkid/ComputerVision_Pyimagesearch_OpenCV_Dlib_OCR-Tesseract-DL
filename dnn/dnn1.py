@@ -19,7 +19,7 @@
 #ImageAI: older versions require tf 1.x
 #tf 2.4 - required by ImageAI 2.1.6 -- no GPU supported on Win 7, tf requires CUDA 11.0 (Win10). Win7: CUDA 10.x. CPU: works
 # Set the paths to models, images etc.
-# My experiments results: disappointingly bad pose estimation on the images I tested
+# My experiments results: disappointingly bad pose estimation on the images I tested. Sometimes good, sometimes terrible. 
 
 import cv2
 import tensorflow.compat.v1 as tf
@@ -30,7 +30,7 @@ boxes = []
 def yolo():
     #name = "k.jpg"
     root = "Z:\\"
-    name = "p1.jpg" #"2w.jpg" #"grigor.jpg" #"2w.jpg" #"pose1.webp" #1.jpg"
+    name = "23367640.png" #t.jpg" #"p1.jpg" #"2w.jpg" #"grigor.jpg" #"2w.jpg" #"pose1.webp" #1.jpg"
     execution_path = os.getcwd()
     yolo_path = "Z:\\yolo.h5"
     #yolo_path = "Z:\\yolo-tiny.h5"
