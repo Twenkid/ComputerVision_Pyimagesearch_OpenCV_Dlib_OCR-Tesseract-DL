@@ -1,4 +1,4 @@
-# Pose estimation using YOLO, ImageAI and DNN
+# Pose estimation and object detection: OpenCV DNN, ImageAI, YOLO, mpi, caffemodel, tensorflow
 # Authors:
 # Tutorial by: https://learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
 # Model file links collection (replace .sh script): Twenkid
