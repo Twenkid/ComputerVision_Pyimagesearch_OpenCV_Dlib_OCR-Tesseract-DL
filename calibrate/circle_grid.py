@@ -33,6 +33,7 @@
 # Create Date:      2017-03-20                                                 #
 # Modified Date:    2020-01-18                                                 #
 ################################################################################
+# Based on: https://github.com/LongerVision/Examples_OpenCV/blob/master/01_internal_camera_calibration/circle_grid.py
 # Twenkid, 19.8.2021: Using OpenCV 4.2: errors:
 # s8y2i1\opencv\modules\core\src\matmul.dispatch.cpp:439: error: (-215:Assertion failed) scn == m.cols || scn + 1 == m.cols in function 'cv::transform'
 # https://www.gitmemory.com/issue/opencv/opencv/19574/782555438
