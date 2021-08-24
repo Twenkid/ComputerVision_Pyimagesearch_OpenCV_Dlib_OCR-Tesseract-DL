@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
+# stereo4.py
 # Author (experimenter): Todor Arnaudiv - Twenkid
 # Combining and debugging examples, testing with histogram equalization and CLAHE
 # Stereo2-3-4: 24.8.2021
@@ -27,7 +28,7 @@ property uchar blue
 end_header
 '''
 bWritePly = False #WARNING! Big files 1.7 MB per frame
-uniquenessRatio = 2 #1 #10
+uniquenessRatio = 1 #2 #1 #10
 
 def SaveMtx(mtx, dist, path='calibration.yml'):
     #  Python code to write the image (OpenCV 3.2)
@@ -148,7 +149,7 @@ print("Press ESC for exit...")
 stereo = cv2.StereoBM_create(numDisparities=16, blockSize=15)
 Eq = 2 #2 = CLAHE, 1 = equ
 bUndistort = True #False
-Eq = 0
+Eq = 1 #histogram equalization, simple
 window_size = 3 #3
 speckle = 100
 n = 0
