@@ -27,7 +27,7 @@ property uchar blue
 end_header
 '''
 bWritePly = False #WARNING! Big files 1.7 MB per frame
-uniquenessRatio = 1 #10
+uniquenessRatio = 2 #1 #10
 
 def SaveMtx(mtx, dist, path='calibration.yml'):
     #  Python code to write the image (OpenCV 3.2)
@@ -146,9 +146,9 @@ imgR = cv2.imread('right.jpg',0)
 print("Press ESC for exit...")
 #stereo = cv2.StereoBM_create(numDisparities=16, blockSize=15)
 stereo = cv2.StereoBM_create(numDisparities=16, blockSize=15)
-Eq = 2 #CLAHE, 1 = equ
+Eq = 2 #2 = CLAHE, 1 = equ
 bUndistort = True #False
-#Eq = 0
+Eq = 0
 window_size = 3 #3
 speckle = 100
 n = 0
@@ -281,7 +281,10 @@ if bCam:
       if kk == ord('a'): uniquenessRatio+= 1
       if kk == ord('s'): uniquenessRatio-= 1
       if kk == ord('d'): bUndistort = not bUndistort
-      print(window_size, speckle, uniquenessRatio, bUndistort, kk)
+      if kk == ord('e'): Eq=Eq-1
+      if kk == ord('r'): Eq=Eq+1
+      
+      print(window_size, speckle, uniquenessRatio, bUndistort, Eq, kk)
       
       
   
