@@ -14,6 +14,15 @@ Start->Environment-> Path (System and User)  /bin/ ... (where opencv_world452.dl
 VS:
 For Project->Properties->VC++ directories
 
+Release ...
+
+Additional Include ...
+
+Additional Library ...
+
+I:\opencv\build\x64\vc15\lib\ ...
+opencv_world452.lib 
+
 Executable
 Include
 Library
